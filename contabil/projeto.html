@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Gestão Contábil</title>
+  
+  <style>
+    /* Estilos gerais */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 5px; 
+    }
+
+    /* Cabeçalho */
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0 50px;
+      background-color: #f8f8f8;
+    }
+
+    .header h1 {
+      margin-left: 50px;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 50px;
+    }
+
+    .nav-links a {
+      font-size: 20px;
+      text-decoration: none;
+      color: black;
+      cursor: pointer;
+    }
+
+    /* Seções */
+    section {
+      ppadding: 10px 20px; /*O padding interno das seções */
+      margin-bottom: 5px;
+    }
+    section h2 {
+      margin-bottom: 10px; /* Reduz o espaço abaixo dos títulos */
+    }
+    /* Imagem de capa */
+    #inicio {
+      background-image: url('./img/capa.jpg');
+      background-size: cover;
+      background-repeat: no-repeat;
+      width: 100%;
+      height: 250px;
+      padding: 200px 80px;
+      position: relative;
+    }
+
+    #inicio h2 {
+      position: absolute;
+      top: 500px;
+      left: 100px;
+      font-weight: bold;
+      background-color: rgba(255, 255, 255, 0.6);
+      border-radius: 10px;
+      padding: 10px;
+    }
+
+    /* Imagens e descrições com Flexbox */
+    .services-container {
+      display: flex;
+      justify-content: space-between;
+      gap: 30px;
+      padding: 20px 20px;
+      margin-left: 20px;
+      align-items: stretc
+    }
+
+    .service-item {
+      width: 30%;
+    }
+
+    .service-item img {
+      width: 100%;
+      height: 60%; /* Ajuste a altura da imagem para preencher o espaço necessário */
+      object-fit: cover; /* Mantém a imagem inteira visível */
+      margin-bottom: 10px;
+      border: 2px solid black; /* Adiciona uma borda azul de 2px ao redor da imagem */
+      box-sizing: border-box; /* Garante que a borda não afete o tamanho do layout */
+    }
+
+    .service-item p {
+      font-size: 20px;
+      text-align: justify;
+    }
+
+    /* Contatos */
+    .container {
+      display: flex;
+      justify-content: space-between;
+      padding: 10px;
+    }
+
+    .left {
+      width: 30%; /* Diminui a largura da coluna esquerda */
+      padding: 10px;
+      margin-right: 5%; /* Adiciona um espaçamento entre as colunas */
+    }
+
+    .right {
+      width: 70%; /* Ajusta a largura da coluna direita */
+      padding: 5px;
+    }
+
+    .left h3, .left p {
+      font-size: 20px;
+      font-weight: normal;
+    }
+
+    .left img, .right img {
+      vertical-align: middle;
+      margin-right: 5px;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Cabeçalho -->
+  <div class="header">
+    <h1>Gestão Contábil</h1>
+    <div class="nav-links">
+      <a href="#inicio">Início</a>
+      <a href="#sobre-nos">Sobre Nós</a>
+      <a href="#servicos">Serviços</a>
+      <a href="#contatos">Contatos</a>
+    </div>
+  </div>
+
+  <!-- Seção de capa -->
+  <section id="inicio">
+    <h2>Trabalhamos com Profissionalismo e Transparência!</h2>
+  </section>
+
+  <!-- Seção sobre nós -->
+  <section id="sobre-nos" style="padding: 20px; text-align: justify;">
+    <h2>Sobre Nós</h2>
+    <p style="font-size: 20px; font-weight: normal; color: #000;">
+      Escritório de contabilidade, há 20 anos no mercado, oferecendo serviços de contabilidade, escrituração fiscal e legalização de empresas.<br/> O público-alvo são pequenas empresas, que precisam terceirizar suas operações contábeis para garantir que estejam em conformidade com a legislação fiscal e obtenham uma visão clara de sua situação financeira.
+    </p>    
+  </section>
+
+  <!-- Seção de serviços -->
+  <section id="servicos" style="padding: 20px; text-align: justify;">
+    <h2>Nossos Serviços</h2>
+    <p style="font-size: 20px; font-weight: normal; color: #000;">
+      A empresa oferece serviços contábeis para pequenas empresas, auxiliando na gestão financeira, conformidade fiscal e tomada de decisões financeiras.<br/>Os serviços são prestados diretamente aos clientes por meio de reuniões presenciais, online ou no local do cliente, além de plataformas digitais, para facilitar a entrega de relatórios e interações contínuas.<br/>A empresa mantém um relacionamento próximo com seus clientes, oferecendo suporte contínuo, atualizações sobre mudanças fiscais e adaptando seus serviços às necessidades específicas de cada cliente.
+    </p>
+  </section>
+
+  <!-- Imagens e descrições em Flexbox -->
+    <div class="services-container">
+      <div class="service-item">
+        <img src="./img/receitas.jpg" alt="Receitas">
+        <p>As receita da empresa vem das taxas cobradas pelos serviços contábeis prestados. Isso pode incluir taxas fixas mensais (para serviços contínuos), honorários por hora ou por projeto (para serviços específicos).</p>
+      </div>
+       <div class="service-item">
+        <img src="./img/clientes.jpg" alt="Clientes">
+        <p>Contadores experientes, software contábil especializado e conhecimento atualizado.</p>
+      </div>
+       <div class="service-item">
+        <img src="./img/finanças.jpg" alt="Finanças">
+        <p>As principais atividades incluem a realização de lançamentos contábeis e planejamento tributário.</p>
+      </div>
+    </div>
+  </section>
+      
+  <!-- Seção de contatos -->
+  <section id="contatos" style="padding:20px; text-align: justify;">
+    <h2>Contatos</h2>
+    <div class="container">
+      <div class="left">
+        <h3 style="font-size: 20px; font-weight: normal;"><b>Formas de entrar em contato conosco</b></h3> <!-- Corrigido o fechamento da tag <b> -->
+        <p style="font-size: 20px; font-weight: normal;">
+          <img src="./img/envelope.png" style="width: 50px; height: 50px; vertical-align: middle; margin-right: 5px;">
+          contato@gestaocontab.com.br
+        </p>
+        <p style="font-size: 20px; font-weight: normal;">
+          <img src="./img/telefone.png" style="width: 50px; height: 50px; vertical-align: middle; margin-right: 5px;">
+          (38) 3223-0039
+        </p>
+        <p style="font-size: 20px; font-weight: normal;">
+          <img src="./img/facebook.png" style="width: 50px; height: 50px; vertical-align: middle; margin-right: 5px;">
+          Facebook
+        </p>
+        <p style="font-size: 20px; font-weight: normal;">
+          <img src="./img/whatsapp.png" style="width: 50px; height: 50px; vertical-align: middle; margin-right: 5px;">
+          WhatSaap
+        </p>
+      </div>
+      <div class="right">
+        <p style="font-size: 20px; font-weight: normal;">
+          <b>Nossa Localização</b>
+        </p>   
+        <p><iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7642.363654529227!2d-43.869488!3d-16.717777!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x754acaae30d36f3%3A0x9d70997c2ae8a0e6!2sR.%20Francisco%20Jos%C3%A9%20Souto%2C%20147%20-%20Todos%20Os%20Santos%2C%20Montes%20Claros%20-%20MG%2C%2039400-125!5e0!3m2!1spt-BR!2sbr!4v1725624253974!5m2!1spt-BR!2sbr"  width="600" height="300" style="border: 3px solid blue;margin-right: 50px" allowfullscreen="" loading="lazy"></iframe>
+          
+      </div>
+    </div>
+  </section>
+</body>
+</html>
